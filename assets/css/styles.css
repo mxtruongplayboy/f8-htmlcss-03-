@@ -627,3 +627,113 @@ a {
     font-weight: 500;
     line-height: 1.71; /* 171.429% */
 }
+
+/* ---------- Process ----------- */
+.process {
+    padding-top: 36px;
+    margin-top: 79px;
+}
+
+.process__title {
+    line-height: 1.13; /* 112.5% */
+}
+
+.process__title::before {
+    top: 8px;
+}
+
+.process__heading {
+    position: relative;
+    margin-top: 20px;
+    width: 477px;
+}
+
+.process__heading::after {
+    position: absolute;
+    bottom: 18px;
+    right: -9px;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background: var(--primary-color-black);
+}
+
+.process__list {
+    margin-top: 81px;
+}
+
+.process__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 155px;
+    padding: 0 41px 0 30px;
+    border-bottom: 1px solid #83a17d;
+    transition: 0.3s;
+}
+
+.process__item:hover {
+    border-color: transparent;
+    border-radius: 33px;
+    background: var(--secondary-color-light-green);
+    height: 185px;
+}
+
+.process__index {
+    color: var(--primary-color-black-green);
+    font-size: 7.2rem;
+    font-weight: 600;
+    line-height: 0.72; /* 72.222% */
+}
+
+.process__block {
+    position: relative;
+    margin-left: 50px;
+}
+
+.process__block-top {
+    margin-left: 66px;
+}
+
+.process__more {
+    position: absolute;
+    left: 0;
+    bottom: -37px;
+    color: var(--text-color-black-gray);
+    font-size: 1.8rem;
+    line-height: 1; /* 100% */
+    text-decoration: underline;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.process__item:hover .process__more {
+    opacity: 1;
+}
+
+.process__desc {
+    max-width: 572px;
+    color: var(--text-color-light-gray);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56; /* 155.556% */
+    margin-left: auto;
+}
+
+.process__item:hover .process__desc {
+    visibility: hidden;
+}
+
+.process__img {
+    position: absolute;
+    bottom: 0;
+    right: 92px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.process__item:hover .process__img {
+    opacity: 1;
+    visibility: visible;
+}
