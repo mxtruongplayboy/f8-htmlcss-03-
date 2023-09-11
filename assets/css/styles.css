@@ -825,3 +825,75 @@ a {
 .feature__play:hover {
     opacity: 0.9;
 }
+
+/* ---------- Service Feature ----------- */
+.share {
+    margin-top: 140px;
+}
+
+.share__heading {
+    max-width: 520px;
+}
+
+.share__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.share__heading::after {
+    position: relative;
+}
+
+.share__desc {
+    margin-top: 20px;
+    max-width: 547px;
+    color: var(--text-color-light-gray);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63; /* 162.5% */
+}
+
+.share__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 45px;
+    margin-top: 103px;
+}
+
+.share-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 160px;
+    border: 1.5px solid #cecece;
+    height: 362px;
+    transition: 0.3s;
+}
+
+.share-item:hover {
+    transform: translateY(-59px);
+    border-color: transparent;
+    background: #fff;
+    box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+}
+
+.share-item__title {
+    margin-top: 26px;
+    color: #152427;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.share-item__desc {
+    margin: 10px auto 0;
+    max-width: 264px;
+    color: var(--text-color-light-gray);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
+    text-align: center;
+}
