@@ -14,6 +14,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -129,14 +130,20 @@ a {
 }
 /* ---------- Header top ----------- */
 .header-top {
+    position: sticky;
+    z-index: 100;
+    top: -14px;
+    background: #fff;
+}
+
+.header-top__inner {
     position: relative;
     display: flex;
     align-items: center;
-    margin-top: 28px;
-    padding-bottom: 14px;
+    padding: 28px 0 14px;
 }
 
-.header-top::after {
+.header-top__inner::after {
     position: absolute;
     bottom: 0;
     content: "";
@@ -166,7 +173,7 @@ a {
 .navbar__item::after {
     position: absolute;
     left: 25px;
-    bottom: -28px;
+    bottom: -35px;
     content: "";
     width: 16px;
     height: 2px;
